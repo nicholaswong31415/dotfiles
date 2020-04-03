@@ -8,4 +8,5 @@ done
 if [ $( echo "$OSTYPE" | grep 'darwin' ) ] ; then
   sh brew.setup.sh
   sh node.setup.sh
+  sh macos.setup.sh
 fi
