@@ -25,4 +25,4 @@ export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Aliases
-alias hack='cd ~/Documents/plushcodes/'
+alias hack='cd ~/Documents/plushcodes/' # only works for my particular directory setup
