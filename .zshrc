@@ -6,10 +6,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # I currently don't use any executables in this directory
 # export PATH="/usr/local/sbin:$PATH"
 
-#################################################################
-#                      Command Prompt:                          #
-#################################################################
-
+# Command Prompt
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{blue}%1~%f%b %# '
 
 # Show git branch
@@ -26,3 +23,6 @@ zstyle ':vcs_info:*' enable git
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Aliases
+alias hack='cd ~/Documents/plushcodes/'
