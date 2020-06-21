@@ -5,9 +5,15 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # I currently don't use any executables in this directory
 # export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/plushtree/.local/bin:$PATH"
 
 # Command Prompt
-PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{blue}%1~%f%b %# '
+# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{blue}%1~%f%b $ '
+PROMPT='%B%F{blue}%1~%f%b '
+
+# Colours for directories using 'ls'
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # Show git branch
 autoload -Uz vcs_info
