@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Symlink the files to home directory
-for file in $( ls -A | grep -vE '\.setup*|\.git$|\.gitignore|.*.md' ) ; do
+for file in $( ls -A | grep -vE '\.setup*|\.git$|\.gitignore|.*.md|LICENSE' ) ; do
   ln -sv "$PWD/$file" "$HOME"
 done
 
