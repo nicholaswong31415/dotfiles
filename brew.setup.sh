@@ -16,6 +16,7 @@ brew upgrade
 
 # Brew Formulae
 brew install zsh-syntax-highlighting
+brew install git
 
 # Brew Casks
 brew cask install kitty

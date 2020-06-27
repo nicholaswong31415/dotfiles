@@ -12,6 +12,4 @@ cd ~/.dotfiles
 sh ./bootstrap.setup.sh
 ```
 
-Note: zsh-syntax-highlighting has to manually installed
-
 Thanks for taking the time to have a look at my dotfiles ☺️
