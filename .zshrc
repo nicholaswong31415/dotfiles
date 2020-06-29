@@ -17,7 +17,7 @@ zle -N zle-keymap-select
 
 # I currently don't use any executables in this directory
 # export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/plushtree/.local/bin:$PATH"
+export PATH="/Users/nicholaswong/.local/bin:$PATH"
 
 # Command Prompt
 # PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{blue}%1~%f%b $ '
@@ -36,13 +36,7 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{magenta}(%b) %r%f'
 zstyle ':vcs_info:*' enable git
 
-# This is required by Node Version Manager
-
-export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Aliases
-alias hack='cd ~/Documents/plushcodes/' # only works for my particular directory setup
+alias hack='cd ~/Documents/Development/' # only works for my particular directory setup
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
