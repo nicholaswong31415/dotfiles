@@ -19,10 +19,9 @@ brew install zsh-syntax-highlighting
 brew install git
 
 # Brew Casks
-brew cask install kitty
+brew cask install alacritty
 brew tap homebrew/cask-fonts
 brew cask install font-monoid
-brew cask install visual-studio-code
 
 # Remove outdated versions from the cellar
 brew cleanup
