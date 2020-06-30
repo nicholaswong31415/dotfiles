@@ -3,11 +3,10 @@ bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
 # Changing cursor type in vi mode
-function zle-keymap-select zle-line-init zle-line-finish
-{
+function zle-line-init zle-keymap-select zle-line-finish {
   case $KEYMAP in
-      vicmd)      print -n '\033[1 q';; # block cursor
-      viins|main) print -n '\033[5 q';; # line cursor
+    vicmd)      print -n '\e[1 q';;
+    viins|main) print -n '\e[5 q';;
   esac
 }
 
