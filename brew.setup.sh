@@ -17,6 +17,7 @@ brew upgrade
 # Brew Formulae
 brew install zsh-syntax-highlighting
 brew install git
+brew install tmux
 
 # Brew Casks
 brew cask install alacritty
