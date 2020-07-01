@@ -9,6 +9,7 @@ set encoding=utf-8
 set background=dark
 
 inoremap jk <Esc>
+let mapleader = " "
 
 "Changing cursor shape
 let &t_SI .= "\<Esc>[6 q" "solid vertical bar
