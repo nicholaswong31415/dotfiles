@@ -2,21 +2,27 @@
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
-# Changing cursor type in vi mode
-function zle-line-init zle-keymap-select zle-line-finish {
+function zle-line-init {
+  print -n '\e[5 q'
+}
+
+function zle-keymap-select {
   case $KEYMAP in
-    vicmd)      print -n '\e[1 q';;
+    vicmd) print -n '\e[1 q';;
     viins|main) print -n '\e[5 q';;
   esac
 }
 
+function zle-line-finish {
+  print -n '\e[1 q'
+}
+
 zle -N zle-line-init
-zle -N zle-line-finish
 zle -N zle-keymap-select
+zle -N zle-line-finish
 
 # I currently don't use any executables in this directory
 # export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/nicholaswong/.local/bin:$PATH"
 
 # Command Prompt
 # PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{blue}%1~%f%b $ '
