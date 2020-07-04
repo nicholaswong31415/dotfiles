@@ -159,34 +159,35 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Iceberg Dark)
+# Colors (Miramare)
 colors:
   # Default colors
   primary:
-    background: '#161821'
-    foreground: '#d2d4de'
+    background: '#262626'
+    foreground: '#e6d6ac'
 
   # Normal colors
   normal:
     black:   '#161821'
-    red:     '#e27878'
-    green:   '#b4be82'
-    yellow:  '#e2a478'
-    blue:    '#84a0c6'
-    magenta: '#a093c7'
-    cyan:    '#89b8c2'
-    white:   '#c6c8d1'
+    red:     '#e68183'
+    green:   '#87af87'
+    yellow:  '#d9bb80'
+    blue:    '#89beba'
+    magenta: '#d3a0bc'
+    cyan:    '#87c095'
+    white:   '#e6d6ac'
 
   # Bright colors
+  # Note: I have made these the same as the normal colors, it hasn't affected me for now
   bright:
-    black:   '#6b7089'
-    red:     '#e98989'
-    green:   '#c0ca8e'
-    yellow:  '#e9b189'
-    blue:    '#91acd1'
-    magenta: '#ada0d3'
-    cyan:    '#95c4ce'
-    white:   '#d2d4de'
+    black:   '#161821'
+    red:     '#e68183'
+    green:   '#87af87'
+    yellow:  '#d9bb80'
+    blue:    '#89beba'
+    magenta: '#d3a0bc'
+    cyan:    '#87c095'
+    white:   '#e6d6ac'
 
 # Visual Bell
 #
@@ -229,7 +230,7 @@ colors:
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
 
-#cursor:
+cursor:
   # Cursor style
   #
   # Values for `style`:
@@ -248,7 +249,7 @@ colors:
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  #unfocused_hollow: true
+  unfocused_hollow: true
 
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.

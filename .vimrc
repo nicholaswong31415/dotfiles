@@ -20,5 +20,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
+Plug 'franbach/miramare'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
+
+set termguicolors
+
+let g:miramare_disable_italic_comment = 1
+
+colorscheme miramare
