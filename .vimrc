@@ -1,6 +1,7 @@
 syntax on
 "set number
 "set relativenumber
+set noshowmode
 set tabstop=2 shiftwidth=2 expandtab
 set smartindent
 set noswapfile
@@ -14,6 +15,7 @@ let mapleader = " "
 
 "Changing cursor shape
 let &t_SI .= "\<Esc>[6 q" "solid vertical bar
+let &t_SR .= "\<Esc>[4 q" "solid underscore
 let &t_EI .= "\<Esc>[2 q" "solid block
 
 call plug#begin('~/.vim/plugged')
@@ -30,3 +32,5 @@ set termguicolors
 let g:miramare_disable_italic_comment = 1
 
 colorscheme miramare
+
+autocmd VimEnter * redraw!
