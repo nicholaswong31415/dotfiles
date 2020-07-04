@@ -17,12 +17,9 @@ brew upgrade
 # Brew Formulae
 brew install zsh-syntax-highlighting
 brew install git
-brew install tmux
 
 # Brew Casks
 brew cask install alacritty
-brew tap homebrew/cask-fonts
-brew cask install font-monoid
 
 # Remove outdated versions from the cellar
 brew cleanup

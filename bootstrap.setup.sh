@@ -8,7 +8,6 @@ done
 # If using MacOS then run the setup scripts to install tools and MacOS defaults
 #if [ $( echo "$OSTYPE" | grep 'darwin' ) ] ; then
 #  sh brew.setup.sh
-#  sh tmux.setup.sh
 #  sh vim.setup.sh
 #  sh macos.setup.sh
 #fi
