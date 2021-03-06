@@ -33,7 +33,4 @@ zstyle ':vcs_info:*' enable git
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-# Aliases
-alias hack='cd ~/Documents/Development/' # only works for my particular directory setup
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

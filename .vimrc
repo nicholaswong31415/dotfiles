@@ -14,6 +14,7 @@ set background=dark
 highlight EndOfBuffer ctermfg=black ctermbg=black
 
 inoremap jk <Esc>
+
 let mapleader = " "
 
 "Changing cursor shape
